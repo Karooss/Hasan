@@ -1,0 +1,22 @@
+import random
+
+print("Öncelikle Selam.Eğer League of Legends oyununa yeni başladıysan koridor adlarının kısaltmalarını bilmiyor olabilirsin.Aşağıya anlamadığın kelimeleri yazabilirsin")
+
+
+for i in range(3):
+    LoL_Koridor_isimleri = {
+            "Top": "Üst Koridor",
+            "Jungle": "Orman",
+            "Mid": "Orta Koridor",
+            "Bot": "Alt Koridor",
+            "Support": "Destek",
+            "Lane": "Koridor",
+            } 
+
+
+word = input("Anlamadığınız bir kelime yazın (Kelimelerin baş harflerini büyük yazın!):").capitalize()
+    
+if word in LoL_Koridor_isimleri.keys():
+    print(LoL_Koridor_isimleri[word])
+else:
+     print("Yazdığınız kelimede bir hata var lütfen hatanızı düzeltin(Baş harflerini büyük yazmayı unutmayın!)")
